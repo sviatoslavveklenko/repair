@@ -1,3 +1,5 @@
+*
+	box-sizing: border-box
 body
 	color: $text-color
 	+reg
@@ -22,3 +24,13 @@ body
 	border: none
 	border-radius: 10px
 	padding: 14px 30px 17px 30px
+	+bold
+	&:hover
+		background-color: lighten($main-color,27%)
+		cursor: pointer
+.input
+	padding: 20px 25px
+	border-radius: 10px
+	border: 1px $input-color solid
+	margin-bottom: 30px
+	width: 240px

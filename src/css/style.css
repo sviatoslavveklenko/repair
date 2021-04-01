@@ -14,6 +14,10 @@
   font-style: normal;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   color: #333333;
   font-family: 'Museo Sans Light',sans-serif;
@@ -48,6 +52,21 @@ body img {
   border: none;
   border-radius: 10px;
   padding: 14px 30px 17px 30px;
+  font-family: 'Museo Sans Bold',sans-serif;
+  font-weight: 700;
+}
+
+.button:hover {
+  background-color: #ffea8a;
+  cursor: pointer;
+}
+
+.input {
+  padding: 20px 25px;
+  border-radius: 10px;
+  border: 1px #DDDDDD solid;
+  margin-bottom: 30px;
+  width: 240px;
 }
 
 .navbar {
@@ -114,7 +133,7 @@ body img {
 
 .hero-text {
   flex-basis: 50%;
-  padding-right: 140px;
+  padding-right: 100px;
 }
 
 .hero-text__title {
@@ -146,6 +165,10 @@ body img {
   display: flex;
   align-items: center;
   margin-bottom: 30px;
+}
+
+.hero-list__item:last-child {
+  margin-bottom: 0;
 }
 
 .hero-list__image {
@@ -189,6 +212,108 @@ body img {
   }
   .hero-text__item {
     font-size: 12px;
+  }
+}
+
+.offer {
+  background: url("../img/offer/Clip.png") no-repeat;
+  background-size: contain;
+  background-position: center right;
+  padding: 90px 0;
+  position: relative;
+}
+
+.offer::before {
+  content: '';
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+}
+
+.offer-block {
+  width: 50%;
+  padding-right: 90px;
+  position: relative;
+}
+
+.offer__title {
+  margin-bottom: 30px;
+  max-width: 360px;
+  line-height: 35px;
+}
+
+.offer__subtitle {
+  margin-bottom: 50px;
+  display: inline-block;
+  max-width: 280px;
+}
+
+.offer-form__input:first-child {
+  margin-right: 10px;
+}
+
+.offer-form__button {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.offer-info {
+  display: flex;
+  line-height: 24px;
+  font-size: 15px;
+}
+
+.offer-info__1 {
+  width: 240px;
+}
+
+.offer-info__1:first-child {
+  margin-right: 50px;
+}
+
+@media (max-width: 1200px) {
+  .offer {
+    background-size: cover;
+  }
+  .offer-form__input {
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  .offer-form__button {
+    font-size: 13px;
+  }
+  .offer-info {
+    display: flex;
+    flex-direction: column;
+  }
+  .offer-info__1 {
+    margin-bottom: 0;
+    width: 100%;
+  }
+  .offer-info__phone {
+    display: block;
+  }
+}
+
+@media (max-width: 768px) {
+  .offer {
+    background: #fff;
+  }
+  .offer-block {
+    width: 100%;
+    padding-right: 0;
+  }
+  .offer__title {
+    font-size: 18px;
+  }
+  .offer__subtitle {
+    font-size: 14px;
+  }
+  .offer-formbutton {
+    padding: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,72 @@
+.offer
+	background: url('../img/offer/Clip.png') no-repeat
+	background-size: contain
+	background-position: center right
+	padding: 90px 0
+	position: relative
+	&::before
+		content: ''
+		width: 50%
+		height: 100%
+		position: absolute
+		top: 0
+		left: 0
+		background-color: #fff
+
+	&-block
+		width: 50%
+		padding-right: 90px
+		position: relative
+	&__title
+		margin-bottom: 30px
+		max-width: 360px
+		line-height: 35px
+	&__subtitle
+		margin-bottom: 50px
+		display: inline-block
+		max-width: 280px
+	&-form
+		&__input:first-child
+			margin-right: 10px
+		&__button
+			width: 100%
+			margin-bottom: 30px
+	&-info
+		display: flex
+		line-height: 24px
+		font-size: 15px
+		&__1
+			width: 240px
+			&:first-child
+				margin-right: 50px
+@media (max-width:1200px)
+	.offer
+		background-size: cover
+		&-form
+			&__input
+				margin-bottom: 10px
+				width: 100%
+			&__button
+				font-size: 13px
+		&-info
+			display: flex
+			flex-direction: column
+			&__1
+				margin-bottom: 0
+				width: 100%
+			&__phone
+				display: block
+
+@media (max-width:768px)
+	.offer
+		background: #fff
+		&-block
+			width: 100%
+			padding-right: 0
+		&__title
+			font-size: 18px
+		&__subtitle
+			font-size: 14px
+		&-form
+			&button
+				padding: 0
