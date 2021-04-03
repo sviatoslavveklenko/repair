@@ -13,14 +13,14 @@
 		<div class="container">
 			<div class="navbar-block">
 				<div class="navbar__logo">
-					<img src="./img/Слой 23.png" alt="logo">
+					<img id="logo" src="./img/Слой 23.png" alt="logo">
 				</div>
 				<div class="navbar__info">
 				<div class="navbar__contacts">
 				<span class="navbar__address">Калуга, Москва, МО</span>
 				<a href="tel:+7 (495) 42-251-31" class="navbar__phone">+7 (495) 42-251-31</a>
 				</div>
-				<button class="navbar__button button">Перезвоните нам</button>
+				<button class="navbar__button button" id="button">Перезвоните нам</button>
 			</div>
 		</div>
 		</div>
@@ -54,11 +54,24 @@
 					</form>
 					<div class="offer-info">
 					<p class="offer-info__1">Наш менеджер перезвонит Вам в течение 60 секунд</p>
-					<p class="offer-info__1">или перезвоните нам сами <span class="offer-info__phone">+7 (495) 42-251-31</span> </p>
+					<p class="offer-info__2">или перезвоните нам сами <span class="offer-info__phone">+7 (495) 42-251-31</span> </p>
 					</div>
 				</div>
 			</div>
 		</section>
 	</main>
+	<div class="modal" id="modal">
+		<div class="modal-dialog">
+			<button class="modal-dialog__close" id="close">&times;</button>
+			<h4 class="modal-dialog__title">Всплывающее окно!</h4>
+		</div>
+	</div>
+	<div class="up" id="up"><img  src="./img/up.svg" alt="up"></div>
+	<script src="./js/main.js"></script>
+	<script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous" ></script>
+  <script src="./js/modal.js"></script>
 </body>
 </html>
