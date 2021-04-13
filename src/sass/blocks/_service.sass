@@ -1,0 +1,31 @@
+.service
+	padding: 100px 0 70px 0
+	&s
+		display: flex
+		justify-content: space-between
+		&-item
+			background-color: #F5F5F5
+			background-size: cover
+			background-position: center bottom
+			height: 410px
+			width: 370px
+			border: 1px solid $border-color
+
+			&1
+				background: url('../img/service-image1.jpg') 100% 100% no-repeat
+			&2
+				background: url('../img/service-image2.jpg') 100% 100% no-repeat
+			&3
+				background: url('../img/service-image3.jpg') 100% 100% no-repeat
+			&__text
+				font-size: 16px
+				margin: 20px 25px 0 25px
+@media ( max-width: 1200px )
+	.service
+		&s
+			display: flex
+			flex-direction: column
+			justify-content: center
+			align-items: center
+			&-item
+				margin-bottom: 30px
